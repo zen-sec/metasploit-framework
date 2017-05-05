@@ -38,6 +38,7 @@ class MetasploitModule < Msf::Auxiliary
     end
 
     begin
+      print_status("I'm a dangerous killer")
       turl = tpath+'robots.txt'
 
       res = send_request_raw({
